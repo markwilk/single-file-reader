@@ -10,7 +10,15 @@ To check out the source code:
 
 == Getting Started
 
+=== Installation
+
+Not much to install.  Make sure you have the dependent gems:
+  $ sudo gem install sinatra sequel rfeedfinder
+
 === Running the reader
 
 It's as simple as:
   $ ruby reader.rb
+
+A sqlite database will be created to keep track of the feeds that you add.
+
