@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<title><%=@title%></title>
+		<link rel="stylesheet" type="text/css" href="/sty.css" />
+		<script language="javscript" type="text/javascript" src="/jquery-1.3.2.min.js"></script>
+		<script language="javscript" type="text/javascript">
+$(document).ready(function(){
+  $('h3.title').click(function(){
+    $(this).next().toggle('normal');
+  });
+	$('ol#feedlist > li a.del').click(function(){
+		$('input#method').attr('value', 'DELETE');
+		$('form')[0].action = this.href;
+		$('form')[0].submit();
+	});
+	$('input#btnSubmit').click(function(){
+		$('input#method').attr('value', '');
+		$('form')[0].action = '<%= @path %>/feed';
+	});
+});
+		</script>
+	</head>
+	<body>
+		<div id="content">
+		<form method="post" action="/feeds">
+		<input type="text" name="site" />
+		<input type="submit" value="Add" name="add" />
+		<input type="hidden" name="_method" id="method" value="" />
+		</form>
+
+		<%= yield%>
+		</div>
+	</body>
+</html>
+
+

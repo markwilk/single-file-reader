@@ -1,0 +1,28 @@
+body {margin:0;background:#333;
+	font-family:"GillSans-Light",Helvetica,Arial,sans-serif;
+}
+#content {width:95%;
+	background-color:#fff;
+	margin:0;padding:0 0 100px 0;
+	margin-left:auto;margin-right:auto;
+	border:solid 1px #000;
+	border-width:2px 1px 0 1px;}
+
+#reader { width:100%; }
+#feeds { width:300px;background-color:#fff; vertical-align:top;}
+#feeds ol {list-style-type:none;margin:0;padding:0;font-size:12px;}
+#feeds ol a {color:#393;text-decoration:none;line-height:1.8;padding:0 8px;}
+#feeds ol a:hover {background-color:#ada;}
+#articles {vertical-align:top;}
+
+ol.feed {margin:0;padding:0;list-style-type:none;font-size:12px;}
+ol.feed li.link {margin:10px 10px;padding:0;border:solid 1px #666;}
+ol.feed li.link h3.title {font-weight:bold;color:#333;text-decoration:none;line-height:30px;padding:0 10px;margin:0;display:block;cursor:pointer;}
+ol.feed li.link h3.title:hover {background-color:#ccc;}
+ol.feed li.link div.desc {display:none;padding:3px;border-top:dashed 1px #666;}
+
+/* whatsnew */
+div#feedEntry {margin-top:5px;}
+div#feedEntry label {margin-left:15px;margin-right:5px;}
+div#feedEntry input#tbUrl { width:240px; }
+
