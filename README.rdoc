@@ -1,0 +1,16 @@
+== Single File Reader
+
+Single File Reader is a news reader written in Sinatra.  The goal was to create a news reader in a single file.  In the end, I decided to split out the layout, styles.  The reader also uses jQuery, so there is one additional file.
+
+== Resources
+
+To check out the source code:
+
+  git clone git://github.com/markwilk/single-file-reader.git
+
+== Getting Started
+
+=== Running the reader
+
+It's as simple as:
+  $ ruby reader.rb
